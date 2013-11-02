@@ -28,7 +28,9 @@ public:
     void drowQuestions(QDomElement root);
     void saveAnswers();
 
+
     QString paperOpenPath;
+
 
     int qustionNo;
     int mcqNo;

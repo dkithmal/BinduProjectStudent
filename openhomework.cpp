@@ -120,18 +120,130 @@ void OpenHomeWork::on_lWSelectSubject_clicked(const QModelIndex &index)
 
 void OpenHomeWork::on_pBOpen_clicked()
 {
-    QString createPaperOpenPath=basicPath;
-    createPaperOpenPath.append(ui->lWSelectSubject->currentItem()->text());
-    createPaperOpenPath.append("/HomeWork/");
-    createPaperOpenPath.append(ui->lWSelectHomeWork->currentItem()->text());
-    createPaperOpenPath.append(".xml");
+    creatingAnswerPaper();
+    QString creatingAnswerXmlInStudent=basicPath;
+    creatingAnswerXmlInStudent.append(ui->lWSelectSubject->currentItem()->text());
+    creatingAnswerXmlInStudent.append("/Answer/");
+    creatingAnswerXmlInStudent.append(ui->lWSelectHomeWork->currentItem()->text());
+    creatingAnswerXmlInStudent.append("-");
+    creatingAnswerXmlInStudent.append(toGetStudentUserName());
+    creatingAnswerXmlInStudent.append(".xml");
 
-    answerToPaper= new AnswerToPaper(0,createPaperOpenPath);
+    answerToPaper= new AnswerToPaper(0,creatingAnswerXmlInStudent);
     answerToPaper->setModal(false);
     this->close();
     answerToPaper->exec();
     //answerToPaper->show();
 
 
+
+}
+
+
+void OpenHomeWork::creatingAnswerPaper()
+{
+
+    //creating file in Answer directry
+    QString creatingAnswerXmlInStudent=basicPath;
+    creatingAnswerXmlInStudent.append(ui->lWSelectSubject->currentItem()->text());
+    creatingAnswerXmlInStudent.append("/Answer");
+
+
+    //create ansewer directry if not exist
+    if(!QDir(creatingAnswerXmlInStudent).exists())
+    {
+        QDir().mkdir(creatingAnswerXmlInStudent);
+    }
+
+
+    creatingAnswerXmlInStudent.append("/");
+    creatingAnswerXmlInStudent.append(ui->lWSelectHomeWork->currentItem()->text());
+    creatingAnswerXmlInStudent.append("-");
+    creatingAnswerXmlInStudent.append(toGetStudentUserName());
+    creatingAnswerXmlInStudent.append(".xml");
+
+
+  QFile newAnswerXml(creatingAnswerXmlInStudent);
+
+  if(newAnswerXml.exists())
+  {
+
+  }
+  else
+  {
+      //create paper current path
+      QString createPaperOpenPath=basicPath;
+      createPaperOpenPath.append(ui->lWSelectSubject->currentItem()->text());
+      createPaperOpenPath.append("/HomeWork/");
+      createPaperOpenPath.append(ui->lWSelectHomeWork->currentItem()->text());
+      createPaperOpenPath.append(".xml");
+
+      //creating new xml in answer directry
+      QFile newPaperFile(createPaperOpenPath);
+      if(!newPaperFile.open(QFile::ReadWrite| QIODevice::Text))
+      {
+
+      }
+      else
+      {
+          QDomDocument document;
+          QDomElement root;
+
+
+
+              document.setContent(&newPaperFile);
+              root= document.firstChildElement();
+
+              document.appendChild(root);
+              newPaperFile.close();
+
+              if(!newAnswerXml.open(QFile::ReadWrite|QIODevice::Truncate | QIODevice::Text))
+              {
+
+              }
+              else
+              {
+                  QTextStream stream(&newAnswerXml);
+                  stream <<document.toString();
+                  newAnswerXml.close();
+
+             }
+
+
+      }
+  }
+
+
+}
+
+QString OpenHomeWork::toGetStudentUserName()
+{
+    QFile newConfigFile(filepath);
+         if(!newConfigFile.open(QFile::ReadWrite| QIODevice::Text))
+         {
+
+         }
+         else
+         {
+             QDomDocument document;
+             QDomElement root;
+
+
+
+                 document.setContent(&newConfigFile);
+                 root= document.firstChildElement();
+
+
+                 QDomNodeList student= root.elementsByTagName("Student");
+                 return student.at(0).toElement().attribute("StudenttName");
+
+
+
+
+
+
+
+
+         }
 
 }

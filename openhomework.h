@@ -22,6 +22,8 @@ public:
     explicit OpenHomeWork(QDialog *parent = 0);
     ~OpenHomeWork();
     void setSubjetToList();
+    void creatingAnswerPaper();
+    QString toGetStudentUserName();
 
 
     QString filepath;

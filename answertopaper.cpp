@@ -9,6 +9,7 @@ AnswerToPaper::AnswerToPaper(QDialog *parent,QString filePath) :
 
     paperOpenPath=filePath;
 
+
     //qDebug()<<paperOpenPath<<"ssssssssssssssssssssssss";
     qustionNo = 0;
     mcqNo=0;
@@ -581,6 +582,10 @@ void AnswerToPaper::on_pBNext_clicked()
       toCreatePaperLayout();
 
 }
+
+
+
+
 
 
 
