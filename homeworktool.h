@@ -2,6 +2,7 @@
 #define HOMEWORKTOOL_H
 
 #include <QWidget>
+#include <QDialog>
 #include "openhomework.h"
 #include "opennote.h"
 
@@ -9,12 +10,12 @@ namespace Ui {
 class HomeWorkTool;
 }
 
-class HomeWorkTool : public QWidget
+class HomeWorkTool : public QDialog
 {
     Q_OBJECT
     
 public:
-    explicit HomeWorkTool(QWidget *parent = 0);
+    explicit HomeWorkTool(QDialog *parent = 0);
     ~HomeWorkTool();
     OpenHomeWork *openHomeWork;
     OpenNote *openNote;

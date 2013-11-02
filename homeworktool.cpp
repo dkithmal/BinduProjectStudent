@@ -1,8 +1,8 @@
 #include "homeworktool.h"
 #include "ui_homeworktool.h"
 
-HomeWorkTool::HomeWorkTool(QWidget *parent) :
-    QWidget(parent),
+HomeWorkTool::HomeWorkTool(QDialog *parent) :
+    QDialog(parent),
     ui(new Ui::HomeWorkTool)
 {
     ui->setupUi(this);
@@ -17,14 +17,20 @@ HomeWorkTool::~HomeWorkTool()
 void HomeWorkTool::on_pBDoHomeWork_clicked()
 {
     openHomeWork = new OpenHomeWork;
-    openHomeWork->show();
+    openHomeWork->setModal(false);
     this->close();
+    openHomeWork->exec();
+    //openHomeWork->show();
+    //this->close();
 }
 
 void HomeWorkTool::on_pBReadNote_clicked()
 {
     openNote =new OpenNote;
-    openNote->show();
+    openNote->setModal(false);
     this->close();
+    openNote->exec();
+    //openNote->show();
+
 
 }

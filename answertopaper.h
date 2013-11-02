@@ -5,6 +5,7 @@
 #include <QTableWidget>
 #include <QString>
 #include <QFile>
+
 #include <QtXml>
 #include <QDebug>
 #include <QMessageBox>
@@ -15,12 +16,12 @@ namespace Ui {
 class AnswerToPaper;
 }
 
-class AnswerToPaper : public QWidget
+class AnswerToPaper : public QDialog
 {
     Q_OBJECT
     
 public:
-    explicit AnswerToPaper(QWidget *parent = 0,QString filePath=NULL);
+    explicit AnswerToPaper(QDialog *parent = 0,QString filePath=NULL);
     ~AnswerToPaper();
     void toCreatePaperLayout();
     void drowHeader(QDomElement root);

@@ -2,6 +2,7 @@
 #define VIEWNOTE_H
 
 #include <QtWidgets>
+#include <QDialog>
 #include <QString>
 #include <QFile>
 #include <QtXml>
@@ -12,12 +13,12 @@ namespace Ui {
 class ViewNote;
 }
 
-class ViewNote : public QWidget
+class ViewNote : public QDialog
 {
     Q_OBJECT
     
 public:
-    explicit ViewNote(QWidget *parent = 0,QString filePath=NULL);
+    explicit ViewNote(QDialog *parent = 0,QString filePath=NULL);
     ~ViewNote();
     void showContent();
     QString noteFilePath;

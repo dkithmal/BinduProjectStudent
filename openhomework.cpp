@@ -1,8 +1,8 @@
 #include "openhomework.h"
 #include "ui_openhomework.h"
 
-OpenHomeWork::OpenHomeWork(QWidget *parent) :
-    QWidget(parent),
+OpenHomeWork::OpenHomeWork(QDialog *parent) :
+    QDialog(parent),
     ui(new Ui::OpenHomeWork)
 {
     ui->setupUi(this);
@@ -127,8 +127,11 @@ void OpenHomeWork::on_pBOpen_clicked()
     createPaperOpenPath.append(".xml");
 
     answerToPaper= new AnswerToPaper(0,createPaperOpenPath);
-    answerToPaper->show();
+    answerToPaper->setModal(false);
     this->close();
+    answerToPaper->exec();
+    //answerToPaper->show();
+
 
 
 }

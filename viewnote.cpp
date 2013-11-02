@@ -1,8 +1,8 @@
 #include "viewnote.h"
 #include "ui_viewnote.h"
 
-ViewNote::ViewNote(QWidget *parent,QString filePath) :
-    QWidget(parent),
+ViewNote::ViewNote(QDialog *parent,QString filePath) :
+    QDialog(parent),
     ui(new Ui::ViewNote)
 {
     ui->setupUi(this);
@@ -30,7 +30,7 @@ void ViewNote::showContent()
     else
     {
     QTextStream in(&openConfigFile);
-    ui->tEText->setPlainText(in.readAll());
+    ui->tENote->setPlainText(in.readAll());
 
 
 

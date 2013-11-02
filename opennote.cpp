@@ -1,8 +1,8 @@
 #include "opennote.h"
 #include "ui_opennote.h"
 
-OpenNote::OpenNote(QWidget *parent) :
-    QWidget(parent),
+OpenNote::OpenNote(QDialog *parent) :
+    QDialog(parent),
     ui(new Ui::OpenNote)
 {
     ui->setupUi(this);
@@ -70,8 +70,11 @@ void OpenNote::on_pBOpen_clicked()
     createNoteOpenPath.append(".txt");
 
     viewNote = new ViewNote(0,createNoteOpenPath);
-    viewNote->show();
+    viewNote->setModal(false);
     this->close();
+    viewNote->exec();
+    //viewNote->show();
+
 
 }
 

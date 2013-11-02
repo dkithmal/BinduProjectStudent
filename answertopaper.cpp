@@ -1,8 +1,8 @@
 #include "answertopaper.h"
 #include "ui_answertopaper.h"
 
-AnswerToPaper::AnswerToPaper(QWidget *parent,QString filePath) :
-    QWidget(parent),
+AnswerToPaper::AnswerToPaper(QDialog *parent,QString filePath) :
+    QDialog(parent),
     ui(new Ui::AnswerToPaper)
 {
     ui->setupUi(this);

@@ -20,18 +20,27 @@ SOURCES += main.cpp\
     openhomework.cpp \
     opennote.cpp \
     answertopaper.cpp \
-    viewnote.cpp
+    viewnote.cpp \
+    createadmin.cpp \
+    adminlogin.cpp \
+    adminactivity.cpp
 
 HEADERS  += student.h \
     homeworktool.h \
     openhomework.h \
     opennote.h \
     answertopaper.h \
-    viewnote.h
+    viewnote.h \
+    createadmin.h \
+    adminlogin.h \
+    adminactivity.h
 
 FORMS    += student.ui \
     homeworktool.ui \
     openhomework.ui \
     opennote.ui \
     answertopaper.ui \
-    viewnote.ui
+    viewnote.ui \
+    createadmin.ui \
+    adminlogin.ui \
+    adminactivity.ui
