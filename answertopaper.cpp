@@ -317,9 +317,9 @@ void AnswerToPaper::drowQuestions(QDomElement root)
 
                 qNoInPage++;
 
-                QDomNode teacherAnswer=itemElement.elementsByTagName("TeacherAnswer").at(0);
+                QDomNode StudentAnswer=itemElement.elementsByTagName("StudentAnswer").at(0);
 
-                int mcqQusrionAnswer=teacherAnswer.firstChild().nodeValue().toInt();
+                int mcqQusrionAnswer=StudentAnswer.firstChild().nodeValue().toInt();
 
                 if(mcqQusrionAnswer!=0)
                 {
@@ -363,9 +363,9 @@ void AnswerToPaper::drowQuestions(QDomElement root)
 
                  qNoInPage++;
 
-                 QDomNode teacherAnswer=itemElement.elementsByTagName("TeacherAnswer").at(0);
+                 QDomNode StudentAnswer=itemElement.elementsByTagName("StudentAnswer").at(0);
 
-                 QString essayQusrionAnswer=teacherAnswer.firstChild().nodeValue();
+                 QString essayQusrionAnswer=StudentAnswer.firstChild().nodeValue();
                  essayAnswers[EssayQusrionNo-1]->setText(essayQusrionAnswer);
 
             }
@@ -426,15 +426,15 @@ void AnswerToPaper::saveAnswers()
                   {
 
                       QDomElement itemElement=itemNode.toElement();
-                      QDomNode teacherAnswer=itemElement.elementsByTagName("TeacherAnswer").at(0);
+                      QDomNode StudentAnswer=itemElement.elementsByTagName("StudentAnswer").at(0);
 
 
-                      if(!teacherAnswer.isNull())
+                      if(!StudentAnswer.isNull())
                       {
                           int mcqQusrionNo=itemNode.toElement().attribute("McqNo").toInt();
                           int noOfChoises=itemNode.toElement().attribute("NoOfChoises").toInt();
 
-                          QDomElement newTeacherAnswer = document.createElement(QString("TeacherAnswer"));
+                          QDomElement newStudentAnswer = document.createElement(QString("StudentAnswer"));
 
 
                           for(int k=0;k<noOfChoises;k++)
@@ -443,9 +443,9 @@ void AnswerToPaper::saveAnswers()
                               if(rBMcqAnswers[mcqQusrionNo-1][k]->isChecked())
                               {
 
-                                  newTeacherAnswer.appendChild(document.createTextNode(QString::number(k+1)));
+                                  newStudentAnswer.appendChild(document.createTextNode(QString::number(k+1)));
 
-                                  itemNode.replaceChild(newTeacherAnswer,teacherAnswer);
+                                  itemNode.replaceChild(newStudentAnswer,StudentAnswer);
 
                                   break;
                               }
@@ -457,7 +457,7 @@ void AnswerToPaper::saveAnswers()
                       else
                       {
 
-                          QDomElement newTeacherAnswer = document.createElement(QString("TeacherAnswer"));
+                          QDomElement newStudentAnswer = document.createElement(QString("StudentAnswer"));
 
                           int mcqQusrionNo=itemNode.toElement().attribute("McqNo").toInt();
                           int noOfChoises=itemNode.toElement().attribute("NoOfChoises").toInt();
@@ -470,9 +470,9 @@ void AnswerToPaper::saveAnswers()
 
                              if(rBMcqAnswers[mcqQusrionNo-1][m]->isChecked())
                              {
-                                 newTeacherAnswer.appendChild(document.createTextNode(QString::number(m+1)));
+                                 newStudentAnswer.appendChild(document.createTextNode(QString::number(m+1)));
 
-                                 itemNode.appendChild(newTeacherAnswer);
+                                 itemNode.appendChild(newStudentAnswer);
 
 
                                  break;
@@ -486,27 +486,27 @@ void AnswerToPaper::saveAnswers()
                 if(itemNode.toElement().attribute("Type")=="Essay")
                   {
                     QDomElement itemElement=itemNode.toElement();
-                    QDomNode teacherAnswer=itemElement.elementsByTagName("TeacherAnswer").at(0);
+                    QDomNode StudentAnswer=itemElement.elementsByTagName("StudentAnswer").at(0);
 
-                    if(!teacherAnswer.isNull())
+                    if(!StudentAnswer.isNull())
                     {
-                        QDomElement newTeacherAnswer = document.createElement(QString("TeacherAnswer"));
+                        QDomElement newStudentAnswer = document.createElement(QString("StudentAnswer"));
                          int essayQusrionNo=itemNode.toElement().attribute("EssayNo").toInt();
                          QString answer=essayAnswers[essayQusrionNo-1]->document()->toPlainText();
-                        newTeacherAnswer.appendChild(document.createTextNode(answer));
+                        newStudentAnswer.appendChild(document.createTextNode(answer));
 
-                        itemNode.replaceChild(newTeacherAnswer,teacherAnswer);
+                        itemNode.replaceChild(newStudentAnswer,StudentAnswer);
 
 
                     }
                     else
                     {
-                        QDomElement newTeacherAnswer = document.createElement(QString("TeacherAnswer"));
+                        QDomElement newStudentAnswer = document.createElement(QString("StudentAnswer"));
                         int essayQusrionNo=itemNode.toElement().attribute("EssayNo").toInt();
                         QString answer=essayAnswers[essayQusrionNo-1]->document()->toPlainText();
-                        newTeacherAnswer.appendChild(document.createTextNode(answer));
+                        newStudentAnswer.appendChild(document.createTextNode(answer));
 
-                        itemNode.appendChild(newTeacherAnswer);
+                        itemNode.appendChild(newStudentAnswer);
 
 
                     }
