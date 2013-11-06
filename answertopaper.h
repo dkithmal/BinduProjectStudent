@@ -54,6 +54,8 @@ private slots:
 
      void on_pBNext_clicked();
 
+     void on_pBClose_clicked();
+
 private:
     Ui::AnswerToPaper *ui;
 };

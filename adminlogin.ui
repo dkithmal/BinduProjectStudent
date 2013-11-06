@@ -52,10 +52,10 @@
   <widget class="QPushButton" name="pBLogin">
    <property name="geometry">
     <rect>
-     <x>124</x>
-     <y>162</y>
+     <x>100</x>
+     <y>150</y>
      <width>141</width>
-     <height>31</height>
+     <height>41</height>
     </rect>
    </property>
    <property name="text">

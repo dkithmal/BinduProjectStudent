@@ -23,7 +23,8 @@ SOURCES += main.cpp\
     viewnote.cpp \
     createadmin.cpp \
     adminlogin.cpp \
-    adminactivity.cpp
+    adminactivity.cpp \
+    viewotherfiles.cpp
 
 HEADERS  += student.h \
     homeworktool.h \
@@ -33,7 +34,8 @@ HEADERS  += student.h \
     viewnote.h \
     createadmin.h \
     adminlogin.h \
-    adminactivity.h
+    adminactivity.h \
+    viewotherfiles.h
 
 FORMS    += student.ui \
     homeworktool.ui \
@@ -43,4 +45,5 @@ FORMS    += student.ui \
     viewnote.ui \
     createadmin.ui \
     adminlogin.ui \
-    adminactivity.ui
+    adminactivity.ui \
+    viewotherfiles.ui

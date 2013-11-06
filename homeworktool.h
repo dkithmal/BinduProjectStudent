@@ -5,7 +5,7 @@
 #include <QDialog>
 #include "openhomework.h"
 #include "opennote.h"
-
+#include "viewotherfiles.h"
 namespace Ui {
 class HomeWorkTool;
 }
@@ -19,11 +19,14 @@ public:
     ~HomeWorkTool();
     OpenHomeWork *openHomeWork;
     OpenNote *openNote;
+     ViewOtherFiles *viewOtherFiles;
     
 private slots:
     void on_pBDoHomeWork_clicked();
 
     void on_pBReadNote_clicked();
+
+    void on_pBOpenOtherFile_clicked();
 
 private:
     Ui::HomeWorkTool *ui;

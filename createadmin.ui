@@ -47,7 +47,7 @@
      <x>30</x>
      <y>160</y>
      <width>131</width>
-     <height>21</height>
+     <height>31</height>
     </rect>
    </property>
    <property name="font">
@@ -63,9 +63,9 @@
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>210</y>
+     <y>205</y>
      <width>121</width>
-     <height>16</height>
+     <height>21</height>
     </rect>
    </property>
    <property name="font">
@@ -81,9 +81,9 @@
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>250</y>
+     <y>245</y>
      <width>161</width>
-     <height>16</height>
+     <height>21</height>
     </rect>
    </property>
    <property name="text">
@@ -96,7 +96,7 @@
      <x>210</x>
      <y>160</y>
      <width>141</width>
-     <height>21</height>
+     <height>31</height>
     </rect>
    </property>
   </widget>
@@ -104,9 +104,9 @@
    <property name="geometry">
     <rect>
      <x>210</x>
-     <y>210</y>
+     <y>199</y>
      <width>141</width>
-     <height>20</height>
+     <height>31</height>
     </rect>
    </property>
    <property name="echoMode">
@@ -117,9 +117,9 @@
    <property name="geometry">
     <rect>
      <x>210</x>
-     <y>250</y>
+     <y>239</y>
      <width>141</width>
-     <height>20</height>
+     <height>31</height>
     </rect>
    </property>
    <property name="echoMode">

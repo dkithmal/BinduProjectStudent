@@ -6,6 +6,8 @@ AnswerToPaper::AnswerToPaper(QDialog *parent,QString filePath) :
     ui(new Ui::AnswerToPaper)
 {
     ui->setupUi(this);
+    this->setWindowFlags(Qt::Window | Qt::WindowTitleHint | Qt::CustomizeWindowHint);
+
 
     paperOpenPath=filePath;
 
@@ -600,3 +602,10 @@ void AnswerToPaper::on_pBNext_clicked()
 
 
 
+
+void AnswerToPaper::on_pBClose_clicked()
+{
+    saveAnswers();
+    this->close();
+
+}

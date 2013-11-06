@@ -34,3 +34,10 @@ void HomeWorkTool::on_pBReadNote_clicked()
 
 
 }
+
+void HomeWorkTool::on_pBOpenOtherFile_clicked()
+{
+    viewOtherFiles = new ViewOtherFiles;
+    viewOtherFiles->setModal(false);
+    viewOtherFiles->exec();
+}

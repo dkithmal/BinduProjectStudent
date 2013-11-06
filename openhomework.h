@@ -10,6 +10,7 @@
 #include <QMessageBox>
 #include "answertopaper.h"
 
+
 namespace Ui {
 class OpenHomeWork;
 }
@@ -29,6 +30,7 @@ public:
     QString filepath;
     QString basicPath;
     AnswerToPaper *answerToPaper;
+
     
 private slots:
     void on_lWSelectSubject_clicked(const QModelIndex &index);

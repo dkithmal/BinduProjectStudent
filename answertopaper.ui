@@ -26,17 +26,17 @@
     <string>Next</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="pBClose">
    <property name="geometry">
     <rect>
-     <x>1030</x>
+     <x>974</x>
      <y>580</y>
-     <width>75</width>
-     <height>31</height>
+     <width>131</width>
+     <height>41</height>
     </rect>
    </property>
    <property name="text">
-    <string>Close</string>
+    <string>Save All And Close</string>
    </property>
   </widget>
   <widget class="QLabel" name="lPageNo">
