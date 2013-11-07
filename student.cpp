@@ -80,7 +80,7 @@ Student::~Student()
 void Student::showTime()
 {
     QTime time = QTime::currentTime();
-    QString text = time.toString("h:m ap");
+    QString text = time.toString("hh:mm ap");
    // if ((time.second() % 2) == 0)
     //    text[2] = ' ';
     ui->lClock->setText(text);
