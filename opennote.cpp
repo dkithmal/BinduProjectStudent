@@ -6,6 +6,7 @@ OpenNote::OpenNote(QDialog *parent) :
     ui(new Ui::OpenNote)
 {
     ui->setupUi(this);
+    this->setWindowFlags(this->windowFlags() & ~Qt::WindowContextHelpButtonHint);
     filepath ="D:/dk work/Motarola/BinduStudent/Administration/Admin.xml";
     basicPath="D:/dk work/Motarola/BinduStudent/Student/";
 

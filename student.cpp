@@ -80,9 +80,9 @@ Student::~Student()
 void Student::showTime()
 {
     QTime time = QTime::currentTime();
-    QString text = time.toString("hh:mm");
-    if ((time.second() % 2) == 0)
-        text[2] = ' ';
+    QString text = time.toString("h:m ap");
+   // if ((time.second() % 2) == 0)
+    //    text[2] = ' ';
     ui->lClock->setText(text);
 }
 
@@ -95,54 +95,7 @@ void Student::on_pBHomeWork_clicked()
 
 }
 
-//void Student::on_cBSettings_currentIndexChanged(int index)
-//{
-//    if(index==1)
-//    {
-//        QFile openConfigFile(filepath);
-//        if(!openConfigFile.open(QFile::ReadWrite| QIODevice::Text))
-//        {
-//            qDebug()<<"error";
 
-//        }
-//        else
-//        {
-//            QDomDocument document;
-
-//            document.setContent(&openConfigFile);
-//            QDomElement root= document.firstChildElement();
-
-//            QDomNodeList student = root.elementsByTagName("Student");
-
-//            if(student.isEmpty())
-//            {
-//                createAdmin= new CreateAdmin;
-//                createAdmin->setModal(false);
-//                ui->cBSettings->setCurrentIndex(0);
-//                createAdmin->exec();
-//                setStudentNameInDekstop();
-
-
-//            }
-
-//            else
-//            {
-//                adminLogin= new AdminLogin;
-//                adminLogin->setModal(false);
-//                ui->cBSettings->setCurrentIndex(0);
-//                adminLogin->exec();
-//                setStudentNameInDekstop();
-
-
-//            }
-
-
-
-
-//       }
-
-//    }
-//}
 
 void Student::setStudentNameInDekstop()
 {
@@ -215,6 +168,7 @@ void Student::on_lWSettings_clicked(const QModelIndex &index)
                 createAdmin= new CreateAdmin;
                 createAdmin->setModal(false);
                // ui->cBSettings->setCurrentIndex(0);
+                 ui->lWSettings->setHidden(true);
                 createAdmin->exec();
                 setStudentNameInDekstop();
 
@@ -226,6 +180,7 @@ void Student::on_lWSettings_clicked(const QModelIndex &index)
                 adminLogin= new AdminLogin;
                 adminLogin->setModal(false);
                // ui->cBSettings->setCurrentIndex(0);
+                 ui->lWSettings->setHidden(true);
                 adminLogin->exec();
                 setStudentNameInDekstop();
 

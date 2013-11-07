@@ -6,6 +6,7 @@ CreateAdmin::CreateAdmin(QWidget *parent) :
     ui(new Ui::CreateAdmin)
 {
     ui->setupUi(this);
+    this->setWindowFlags(this->windowFlags() & ~Qt::WindowContextHelpButtonHint);
     filepath ="D:/dk work/Motarola/BinduStudent/Administration/Admin.xml";
 }
 
