@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/BinduStudent/new">
+        <file>imgs/02.jpeg</file>
+        <file>imgs/hw.png</file>
+        <file>imgs/list_student.png</file>
+        <file>imgs/settings_symbol.png</file>
+        <file>imgs/shutdown.png</file>
+        <file>imgs/student.jpg</file>
+        <file>imgs/admin.png</file>
+        <file>imgs/06.jpeg</file>
+    </qresource>
+</RCC>

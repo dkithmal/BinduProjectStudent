@@ -47,3 +47,6 @@ FORMS    += student.ui \
     adminlogin.ui \
     adminactivity.ui \
     viewotherfiles.ui
+
+RESOURCES += \
+    BinduStudent.qrc

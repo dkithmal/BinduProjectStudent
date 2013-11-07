@@ -30,7 +30,11 @@ private slots:
     void showTime();
     void on_pBHomeWork_clicked();
 
-    void on_cBSettings_currentIndexChanged(int index);
+
+
+    void on_pBSettings_clicked();
+
+    void on_lWSettings_clicked(const QModelIndex &index);
 
 private:
     Ui::Student *ui;

@@ -39,5 +39,6 @@ void HomeWorkTool::on_pBOpenOtherFile_clicked()
 {
     viewOtherFiles = new ViewOtherFiles;
     viewOtherFiles->setModal(false);
+    this->close();
     viewOtherFiles->exec();
 }
