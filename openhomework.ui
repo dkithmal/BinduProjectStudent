@@ -16,7 +16,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Select Home Work to Open</string>
   </property>
   <widget class="QPushButton" name="pBClose">
    <property name="geometry">
