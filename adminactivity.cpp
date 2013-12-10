@@ -7,7 +7,7 @@ AdminActivity::AdminActivity(QWidget *parent) :
 {
     ui->setupUi(this);
     this->setWindowFlags(this->windowFlags() & ~Qt::WindowContextHelpButtonHint);
-    filepath ="D:/dk work/Motarola/BinduStudent/Administration/Admin.xml";
+    filepath ="E:/dk work/Motarola/Project Location/Stdudent Path/Administration/Admin.xml";
     ui->tabWidget->setCurrentIndex(0);
 }
 

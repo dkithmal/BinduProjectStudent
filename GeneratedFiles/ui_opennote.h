@@ -24,7 +24,7 @@ QT_BEGIN_NAMESPACE
 class Ui_OpenNote
 {
 public:
-    QListWidget *lWSelectHomeWork;
+    QListWidget *lWSelectNote;
     QLabel *label_2;
     QLabel *label;
     QListWidget *lWSelectSubject;
@@ -36,43 +36,44 @@ public:
         if (OpenNote->objectName().isEmpty())
             OpenNote->setObjectName(QStringLiteral("OpenNote"));
         OpenNote->resize(499, 485);
-        lWSelectHomeWork = new QListWidget(OpenNote);
-        lWSelectHomeWork->setObjectName(QStringLiteral("lWSelectHomeWork"));
-        lWSelectHomeWork->setGeometry(QRect(260, 40, 221, 331));
+        lWSelectNote = new QListWidget(OpenNote);
+        lWSelectNote->setObjectName(QStringLiteral("lWSelectNote"));
+        lWSelectNote->setGeometry(QRect(260, 40, 221, 331));
         QFont font;
-        font.setPointSize(12);
-        lWSelectHomeWork->setFont(font);
+        font.setPointSize(15);
+        lWSelectNote->setFont(font);
         label_2 = new QLabel(OpenNote);
         label_2->setObjectName(QStringLiteral("label_2"));
         label_2->setGeometry(QRect(280, 15, 101, 21));
-        label_2->setFont(font);
+        QFont font1;
+        font1.setPointSize(12);
+        label_2->setFont(font1);
         label = new QLabel(OpenNote);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(20, 10, 111, 31));
-        label->setFont(font);
+        label->setFont(font1);
         lWSelectSubject = new QListWidget(OpenNote);
         lWSelectSubject->setObjectName(QStringLiteral("lWSelectSubject"));
         lWSelectSubject->setGeometry(QRect(10, 40, 221, 401));
-        QFont font1;
-        font1.setPointSize(15);
-        lWSelectSubject->setFont(font1);
+        lWSelectSubject->setFont(font);
         pBOpen = new QPushButton(OpenNote);
         pBOpen->setObjectName(QStringLiteral("pBOpen"));
-        pBOpen->setGeometry(QRect(300, 380, 161, 31));
-        pBOpen->setFont(font);
+        pBOpen->setGeometry(QRect(260, 380, 221, 41));
+        pBOpen->setFont(font1);
         pBClose = new QPushButton(OpenNote);
         pBClose->setObjectName(QStringLiteral("pBClose"));
-        pBClose->setGeometry(QRect(420, 420, 75, 31));
-        pBClose->setFont(font);
+        pBClose->setGeometry(QRect(400, 440, 75, 31));
+        pBClose->setFont(font1);
 
         retranslateUi(OpenNote);
+        QObject::connect(pBClose, SIGNAL(clicked()), OpenNote, SLOT(close()));
 
         QMetaObject::connectSlotsByName(OpenNote);
     } // setupUi
 
     void retranslateUi(QWidget *OpenNote)
     {
-        OpenNote->setWindowTitle(QApplication::translate("OpenNote", "Form", 0));
+        OpenNote->setWindowTitle(QApplication::translate("OpenNote", "Select Note To Open", 0));
         label_2->setText(QApplication::translate("OpenNote", "Select Note", 0));
         label->setText(QApplication::translate("OpenNote", "Select Subject", 0));
         pBOpen->setText(QApplication::translate("OpenNote", "Open Note", 0));

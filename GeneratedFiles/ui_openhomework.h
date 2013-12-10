@@ -41,10 +41,10 @@ public:
         OpenHomeWork->setFont(font);
         pBClose = new QPushButton(OpenHomeWork);
         pBClose->setObjectName(QStringLiteral("pBClose"));
-        pBClose->setGeometry(QRect(420, 410, 75, 31));
+        pBClose->setGeometry(QRect(420, 420, 75, 31));
         pBOpen = new QPushButton(OpenHomeWork);
         pBOpen->setObjectName(QStringLiteral("pBOpen"));
-        pBOpen->setGeometry(QRect(300, 370, 161, 31));
+        pBOpen->setGeometry(QRect(260, 370, 221, 41));
         label = new QLabel(OpenHomeWork);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(20, 0, 111, 31));
@@ -55,7 +55,7 @@ public:
         lWSelectSubject->setObjectName(QStringLiteral("lWSelectSubject"));
         lWSelectSubject->setGeometry(QRect(10, 30, 221, 401));
         QFont font1;
-        font1.setPointSize(20);
+        font1.setPointSize(15);
         lWSelectSubject->setFont(font1);
         lWSelectHomeWork = new QListWidget(OpenHomeWork);
         lWSelectHomeWork->setObjectName(QStringLiteral("lWSelectHomeWork"));
@@ -70,7 +70,7 @@ public:
 
     void retranslateUi(QWidget *OpenHomeWork)
     {
-        OpenHomeWork->setWindowTitle(QApplication::translate("OpenHomeWork", "Form", 0));
+        OpenHomeWork->setWindowTitle(QApplication::translate("OpenHomeWork", "Select Home Work to Open", 0));
         pBClose->setText(QApplication::translate("OpenHomeWork", "Close", 0));
         pBOpen->setText(QApplication::translate("OpenHomeWork", "Do HomeWork", 0));
         label->setText(QApplication::translate("OpenHomeWork", "Select Subject", 0));

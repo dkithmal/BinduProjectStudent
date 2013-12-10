@@ -1,24 +1,87 @@
-﻿Build started 11/2/2013 8:27:08 AM.
+﻿Build started 11/21/2013 7:05:58 PM.
      1>Project "D:\Projects\projects qt\Motorola New\BinduProjectStudent\BinduProjectStudent.vcxproj" on node 2 (Build target(s)).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(345,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IE:\qt\5.1.0\msvc2012\include /IE:\qt\5.1.0\msvc2012\include\QtWidgets /IE:\qt\5.1.0\msvc2012\include\QtNetwork /IE:\qt\5.1.0\msvc2012\include\QtXml /IE:\qt\5.1.0\msvc2012\include\QtGui /IE:\qt\5.1.0\msvc2012\include\QtANGLE /IE:\qt\5.1.0\msvc2012\include\QtCore /Idebug /I. /I"E:\qt\5.1.0\msvc2012\mkspecs\win32-msvc2012" /I.\GeneratedFiles /Zi /nologo /W3 /WX- /Od /Oy- /D _WINDOWS /D UNICODE /D WIN32 /D QT_WIDGETS_LIB /D QT_NETWORK_LIB /D QT_XML_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D QT_OPENGL_ES_2 /D QT_OPENGL_ES_2_ANGLE /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt -Zm200 -w34100 -w34189 answertopaper.cpp
+     1>CustomBuild:
+         Moc'ing adminactivity.h...
+         Moc'ing adminlogin.h...
+         Moc'ing answertopaper.h...
+         Moc'ing createadmin.h...
+         Moc'ing homeworktool.h...
+         Moc'ing openhomework.h...
+         Moc'ing opennote.h...
+         Moc'ing student.h...
+         Moc'ing viewnote.h...
+         Moc'ing viewotherfiles.h...
+         Uic'ing adminactivity.ui...
+         Uic'ing adminlogin.ui...
+         Uic'ing answertopaper.ui...
+         Uic'ing createadmin.ui...
+         Uic'ing homeworktool.ui...
+         Uic'ing openhomework.ui...
+         Uic'ing opennote.ui...
+         Uic'ing student.ui...
+         Uic'ing viewnote.ui...
+         Uic'ing viewotherfiles.ui...
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IE:\Qt\5.1.0\msvc2012\include /IE:\Qt\5.1.0\msvc2012\include\QtWidgets /IE:\Qt\5.1.0\msvc2012\include\QtNetwork /IE:\Qt\5.1.0\msvc2012\include\QtXml /IE:\Qt\5.1.0\msvc2012\include\QtGui /IE:\Qt\5.1.0\msvc2012\include\QtANGLE /IE:\Qt\5.1.0\msvc2012\include\QtCore /Idebug /I. /I"E:\Qt\5.1.0\msvc2012\mkspecs\win32-msvc2012" /I.\GeneratedFiles /Zi /nologo /W3 /WX- /Od /Oy- /D _WINDOWS /D UNICODE /D WIN32 /D QT_WIDGETS_LIB /D QT_NETWORK_LIB /D QT_XML_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D QT_OPENGL_ES_2 /D QT_OPENGL_ES_2_ANGLE /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt -Zm200 -w34100 -w34189 adminactivity.cpp adminlogin.cpp answertopaper.cpp createadmin.cpp Debug\moc_adminactivity.cpp Debug\moc_adminlogin.cpp Debug\moc_answertopaper.cpp Debug\moc_createadmin.cpp Debug\moc_homeworktool.cpp Debug\moc_openhomework.cpp Debug\moc_opennote.cpp Debug\moc_student.cpp Debug\moc_viewnote.cpp Debug\moc_viewotherfiles.cpp homeworktool.cpp main.cpp openhomework.cpp opennote.cpp student.cpp viewnote.cpp viewotherfiles.cpp
+         adminactivity.cpp
+         adminlogin.cpp
          answertopaper.cpp
+         createadmin.cpp
+         moc_adminactivity.cpp
+         moc_adminlogin.cpp
+         moc_answertopaper.cpp
+         moc_createadmin.cpp
+         moc_homeworktool.cpp
+         moc_openhomework.cpp
+         moc_opennote.cpp
+         moc_student.cpp
+         moc_viewnote.cpp
+         moc_viewotherfiles.cpp
+         homeworktool.cpp
+         main.cpp
+         openhomework.cpp
+     1>openhomework.cpp(66): warning C4100: 'index' : unreferenced formal parameter
+         opennote.cpp
+     1>opennote.cpp(82): warning C4100: 'index' : unreferenced formal parameter
+         student.cpp
+     1>student.cpp(147): warning C4100: 'index' : unreferenced formal parameter
+         viewnote.cpp
+         Generating Code...
+     1>d:\projects\projects qt\motorola new\binduprojectstudent\openhomework.cpp(250): warning C4715: 'OpenHomeWork::toGetStudentUserName' : not all control paths return a value
+         Compiling...
+         viewotherfiles.cpp
+     1>viewotherfiles.cpp(40): warning C4100: 'index' : unreferenced formal parameter
+         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IE:\Qt\5.1.0\msvc2012\include /IE:\Qt\5.1.0\msvc2012\include\QtWidgets /IE:\Qt\5.1.0\msvc2012\include\QtNetwork /IE:\Qt\5.1.0\msvc2012\include\QtXml /IE:\Qt\5.1.0\msvc2012\include\QtGui /IE:\Qt\5.1.0\msvc2012\include\QtANGLE /IE:\Qt\5.1.0\msvc2012\include\QtCore /Idebug /I. /I"E:\Qt\5.1.0\msvc2012\mkspecs\win32-msvc2012" /I.\GeneratedFiles /Zi /nologo /W3 /WX- /Od /Oy- /D _WINDOWS /D UNICODE /D WIN32 /D QT_WIDGETS_LIB /D QT_NETWORK_LIB /D QT_XML_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D QT_OPENGL_ES_2 /D QT_OPENGL_ES_2_ANGLE /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt -Zm200 -w34100 -w34189 GeneratedFiles\qrc_BinduStudent.cpp
+         qrc_BinduStudent.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"debug\\BinduProjectStudent.exe" /NOLOGO /LIBPATH:E:\qt\5.1.0\msvc2012\lib /LIBPATH:E:\qt\5.1.0\msvc2012\lib qtmaind.lib E:\qt\5.1.0\msvc2012\lib\Qt5Widgetsd.lib E:\qt\5.1.0\msvc2012\lib\Qt5Networkd.lib E:\qt\5.1.0\msvc2012\lib\Qt5Xmld.lib E:\qt\5.1.0\msvc2012\lib\Qt5Guid.lib E:\qt\5.1.0\msvc2012\lib\Qt5Cored.lib libEGLd.lib libGLESv2d.lib gdi32.lib user32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"debug\BinduProjectStudent.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X86 /SAFESEH "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" Win32\Debug\answertopaper.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"debug\\BinduProjectStudent.exe" /NOLOGO /LIBPATH:E:\Qt\5.1.0\msvc2012\lib /LIBPATH:E:\Qt\5.1.0\msvc2012\lib qtmaind.lib E:\Qt\5.1.0\msvc2012\lib\Qt5Widgetsd.lib E:\Qt\5.1.0\msvc2012\lib\Qt5Networkd.lib E:\Qt\5.1.0\msvc2012\lib\Qt5Xmld.lib E:\Qt\5.1.0\msvc2012\lib\Qt5Guid.lib E:\Qt\5.1.0\msvc2012\lib\Qt5Cored.lib libEGLd.lib libGLESv2d.lib gdi32.lib user32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"debug\BinduProjectStudent.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X86 /SAFESEH "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" Win32\Debug\adminactivity.obj
+         Win32\Debug\adminlogin.obj
+         Win32\Debug\answertopaper.obj
+         Win32\Debug\createadmin.obj
+         Win32\Debug\moc_adminactivity.obj
+         Win32\Debug\moc_adminlogin.obj
          Win32\Debug\moc_answertopaper.obj
+         Win32\Debug\moc_createadmin.obj
          Win32\Debug\moc_homeworktool.obj
          Win32\Debug\moc_openhomework.obj
          Win32\Debug\moc_opennote.obj
          Win32\Debug\moc_student.obj
+         Win32\Debug\moc_viewnote.obj
+         Win32\Debug\moc_viewotherfiles.obj
+         Win32\Debug\qrc_BinduStudent.obj
          Win32\Debug\homeworktool.obj
          Win32\Debug\main.obj
          Win32\Debug\openhomework.obj
          Win32\Debug\opennote.obj
          Win32\Debug\student.obj
+         Win32\Debug\viewnote.obj
+         Win32\Debug\viewotherfiles.obj
+         LINK : debug\\BinduProjectStudent.exe not found or not built by the last incremental link; performing full link
          BinduProjectStudent.vcxproj -> D:\Projects\projects qt\Motorola New\BinduProjectStudent\debug\BinduProjectStudent.exe
      1>Done Building Project "D:\Projects\projects qt\Motorola New\BinduProjectStudent\BinduProjectStudent.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:05.69
+Time Elapsed 00:00:59.32

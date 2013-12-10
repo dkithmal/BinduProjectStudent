@@ -26,7 +26,7 @@ class Ui_AnswerToPaper
 {
 public:
     QPushButton *pBNext;
-    QPushButton *pushButton_2;
+    QPushButton *pBClose;
     QLabel *lPageNo;
     QPushButton *pBPrivious;
     QGroupBox *gBHeader;
@@ -45,9 +45,9 @@ public:
         pBNext = new QPushButton(AnswerToPaper);
         pBNext->setObjectName(QStringLiteral("pBNext"));
         pBNext->setGeometry(QRect(580, 582, 75, 31));
-        pushButton_2 = new QPushButton(AnswerToPaper);
-        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-        pushButton_2->setGeometry(QRect(1030, 580, 75, 31));
+        pBClose = new QPushButton(AnswerToPaper);
+        pBClose->setObjectName(QStringLiteral("pBClose"));
+        pBClose->setGeometry(QRect(974, 580, 131, 41));
         lPageNo = new QLabel(AnswerToPaper);
         lPageNo->setObjectName(QStringLiteral("lPageNo"));
         lPageNo->setGeometry(QRect(550, 590, 21, 16));
@@ -104,9 +104,9 @@ public:
 
     void retranslateUi(QWidget *AnswerToPaper)
     {
-        AnswerToPaper->setWindowTitle(QApplication::translate("AnswerToPaper", "Form", 0));
+        AnswerToPaper->setWindowTitle(QApplication::translate("AnswerToPaper", "Answer To Paper", 0));
         pBNext->setText(QApplication::translate("AnswerToPaper", "Next", 0));
-        pushButton_2->setText(QApplication::translate("AnswerToPaper", "Close", 0));
+        pBClose->setText(QApplication::translate("AnswerToPaper", "Save All And Close", 0));
         lPageNo->setText(QApplication::translate("AnswerToPaper", "1", 0));
         pBPrivious->setText(QApplication::translate("AnswerToPaper", "Privious", 0));
         gBHeader->setTitle(QString());

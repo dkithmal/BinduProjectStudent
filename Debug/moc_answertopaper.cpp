@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_AnswerToPaper_t {
-    QByteArrayData data[4];
-    char stringdata[56];
+    QByteArrayData data[5];
+    char stringdata[75];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -32,10 +32,11 @@ static const qt_meta_stringdata_AnswerToPaper_t qt_meta_stringdata_AnswerToPaper
 QT_MOC_LITERAL(0, 0, 13),
 QT_MOC_LITERAL(1, 14, 21),
 QT_MOC_LITERAL(2, 36, 0),
-QT_MOC_LITERAL(3, 37, 17)
+QT_MOC_LITERAL(3, 37, 17),
+QT_MOC_LITERAL(4, 55, 18)
     },
     "AnswerToPaper\0on_pBPrivious_clicked\0"
-    "\0on_pBNext_clicked\0"
+    "\0on_pBNext_clicked\0on_pBClose_clicked\0"
 };
 #undef QT_MOC_LITERAL
 
@@ -45,7 +46,7 @@ static const uint qt_meta_data_AnswerToPaper[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-       2,   14, // methods
+       3,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -53,10 +54,12 @@ static const uint qt_meta_data_AnswerToPaper[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   24,    2, 0x08,
-       3,    0,   25,    2, 0x08,
+       1,    0,   29,    2, 0x08,
+       3,    0,   30,    2, 0x08,
+       4,    0,   31,    2, 0x08,
 
  // slots: parameters
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
 
@@ -70,6 +73,7 @@ void AnswerToPaper::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         switch (_id) {
         case 0: _t->on_pBPrivious_clicked(); break;
         case 1: _t->on_pBNext_clicked(); break;
+        case 2: _t->on_pBClose_clicked(); break;
         default: ;
         }
     }
@@ -77,7 +81,7 @@ void AnswerToPaper::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
 }
 
 const QMetaObject AnswerToPaper::staticMetaObject = {
-    { &QWidget::staticMetaObject, qt_meta_stringdata_AnswerToPaper.data,
+    { &QDialog::staticMetaObject, qt_meta_stringdata_AnswerToPaper.data,
       qt_meta_data_AnswerToPaper,  qt_static_metacall, 0, 0}
 };
 
@@ -92,22 +96,22 @@ void *AnswerToPaper::qt_metacast(const char *_clname)
     if (!_clname) return 0;
     if (!strcmp(_clname, qt_meta_stringdata_AnswerToPaper.stringdata))
         return static_cast<void*>(const_cast< AnswerToPaper*>(this));
-    return QWidget::qt_metacast(_clname);
+    return QDialog::qt_metacast(_clname);
 }
 
 int AnswerToPaper::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QWidget::qt_metacall(_c, _id, _a);
+    _id = QDialog::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 3)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 3;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 3)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 2;
+        _id -= 3;
     }
     return _id;
 }

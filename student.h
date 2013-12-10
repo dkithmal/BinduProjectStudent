@@ -6,6 +6,7 @@
 #include <QTimer>
 #include <QMessageBox>
 #include <QDesktopWidget>
+#include <stdlib.h>
 #include "homeworktool.h"
 #include "adminlogin.h"
 #include "createadmin.h"

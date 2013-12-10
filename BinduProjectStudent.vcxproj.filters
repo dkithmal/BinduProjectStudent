@@ -27,6 +27,16 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
@@ -36,18 +46,27 @@
       <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
     <Filter Include="Generated Files\Debug">
-      <UniqueIdentifier>{89475414-988f-4d07-b785-b2efb276cb1d}</UniqueIdentifier>
+      <UniqueIdentifier>{adaeecb9-7eb9-4f76-bb00-1d8d475829f2}</UniqueIdentifier>
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
     <Filter Include="Generated Files\Release">
-      <UniqueIdentifier>{7b9ac8ff-8675-4887-83d4-f655d77feac6}</UniqueIdentifier>
+      <UniqueIdentifier>{95954b2b-40ad-4674-90b5-fc2f60c72023}</UniqueIdentifier>
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="adminactivity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="adminlogin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="answertopaper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="createadmin.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="homeworktool.cpp">
@@ -65,10 +84,34 @@
     <ClCompile Include="student.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="viewnote.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="viewotherfiles.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_adminactivity.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_adminactivity.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_adminlogin.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_adminlogin.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
     <ClCompile Include="Debug\moc_answertopaper.cpp">
       <Filter>Generated Files\Debug</Filter>
     </ClCompile>
     <ClCompile Include="Release\moc_answertopaper.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_createadmin.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_createadmin.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
     <ClCompile Include="Debug\moc_homeworktool.cpp">
@@ -95,9 +138,33 @@
     <ClCompile Include="Release\moc_student.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
+    <ClCompile Include="Debug\moc_viewnote.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_viewnote.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_viewotherfiles.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_viewotherfiles.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_BinduStudent.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <CustomBuild Include="adminactivity.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="adminlogin.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
     <CustomBuild Include="answertopaper.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="createadmin.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
     <CustomBuild Include="homeworktool.h">
@@ -112,9 +179,24 @@
     <CustomBuild Include="student.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
+    <CustomBuild Include="viewnote.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="viewotherfiles.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <CustomBuild Include="adminactivity.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="adminlogin.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
     <CustomBuild Include="answertopaper.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="createadmin.ui">
       <Filter>Form Files</Filter>
     </CustomBuild>
     <CustomBuild Include="homeworktool.ui">
@@ -129,9 +211,53 @@
     <CustomBuild Include="student.ui">
       <Filter>Form Files</Filter>
     </CustomBuild>
+    <CustomBuild Include="viewnote.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="viewotherfiles.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <None Include="imgs\02.jpeg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="imgs\06.jpeg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <CustomBuild Include="BinduStudent.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <None Include="imgs\admin.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="imgs\hw.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="imgs\list_student.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="imgs\settings_symbol.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="imgs\shutdown.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="imgs\student.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_adminactivity.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_adminlogin.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
     <ClInclude Include="GeneratedFiles\ui_answertopaper.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_createadmin.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
     <ClInclude Include="GeneratedFiles\ui_homeworktool.h">
@@ -144,6 +270,12 @@
       <Filter>Generated Files</Filter>
     </ClInclude>
     <ClInclude Include="GeneratedFiles\ui_student.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_viewnote.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_viewotherfiles.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
   </ItemGroup>

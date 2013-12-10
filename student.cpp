@@ -6,7 +6,7 @@ Student::Student(QWidget *parent) :
     ui(new Ui::Student)
 {
     ui->setupUi(this);
-   filepath ="D:/dk work/Motarola/BinduStudent/Administration/Admin.xml";
+ filepath ="E:/dk work/Motarola/Project Location/Stdudent Path/Administration/Admin.xml";
    setStudentNameInDekstop();
    ui->lWSettings->setHidden(true);
 
@@ -65,7 +65,7 @@ Student::Student(QWidget *parent) :
     ui->lWSettings->setIconSize(sizeforSettingList);
 
 
-    QPixmap homeWorktoolPM(":/BinduStudent/new/imgs/hw.png");
+    QPixmap homeWorktoolPM(":/BinduStudent/new/imgs/studentWorking.jpg");
 
     QIcon homeWorktoolIcon(homeWorktoolPM);
     ui->pBHomeWork->setIcon(homeWorktoolIcon);
@@ -196,10 +196,9 @@ void Student::on_lWSettings_clicked(const QModelIndex &index)
 
 
     }
-    if(ui->lWSettings->currentItem()->text()=="ShutDown")
+    if(ui->lWSettings->currentItem()->text()=="Shut Down")
     {
-
-
+        system ("init 1");
 
 
     }
